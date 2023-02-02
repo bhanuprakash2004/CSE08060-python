@@ -1,8 +1,10 @@
-a=int(input("enter the number of loaves:"))
-c=int(input("enter the number of day old loaves"))
-b=a*185
-print("loaves discount",b)
-d=(c*185)-(c*185*.6)
-print("regular price",d)
-#print("total discount",b*6)
-print("total amount",b+d)
+a=float(input('enter the number of new breads purchased: '))
+b=float(input('enter the number of old breads urchased: '))
+c=a*185
+d=b*185
+f=float(d*60/100)
+e=185
+print('regular price: ',e)
+print('amount of new bread: ',c)
+print('amount of old bread: ',f)
+print('total price= ',c+f)
