@@ -1,18 +1,16 @@
-number=4
-def isahappynumber(number):
-    reminder=0
-    sum=0
-    while(number!=0):
-        reminder=number%10
-        sum=sum+(reminder*reminder);
-        number=number//10
-        return sum
-
-result=number
-while (result!=1 and result!=4):
-    result=isahappynumber(result)
+def happynumber(num):
+    rem=sum=0
+    while(num>0):
+        rem=num%10
+        sum=sum+(rem*rem)
+        num=num//10
+    return sum
+num=int(input("enter a number:"))
+result=num
+while(result!=1 and result!=4):
+    result=happynumber(result);
 if(result==1):
-    print("ahappynumber")
+    print(str(num)+" is a happy number")
 elif(result==4):
-    print("isnotahappynumber")
-
+    print(str(num)+" is not a happy number")
+        
